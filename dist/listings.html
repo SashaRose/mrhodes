@@ -1,6 +1,31 @@
 <html>
 	<head>
 		<title>Listings</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<style>	
+			#t01 {
+				background-color: #b7d1e2;
+			}
+
+			#t01, th, td {
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+
+			th, td {
+				width: 120px;
+			}
+
+			.first-col {
+				width: 200px;
+			}
+
+			.selected-row:hover {
+				font-family: cursive;
+				font-size:200px;
+				font-weight: bold;
+			}
+		</style>
 	</head>
 	<body>
 		<h1>Listings</h1>
@@ -11,5 +36,32 @@
 			<li><a href="about.html">About</a></li>	
 			<li><a href="contact.html">Contact</a></li>		
 		</ul>
+		<table id="t01">
+			<caption>Listings</caption>
+			<tr> 
+				<th class="first-col">Address</th>
+				<th>Description</th>
+				<th>Price</th>
+			</tr>
+			<tr>
+				<td class="first-col">1234 Main Street</td>
+				<td>Purple House</td>
+				<td>$500,000</td>
+			</tr>
+		</table>
+
+		<table id="t02">
+			<caption>Listings</caption>
+			<tr> 
+				<th class="first-col">Address</th>
+				<th>Description</th>
+				<th>Price</th>
+			</tr>
+			<tr class="selected-row">
+				<td class="first-col">1234 Main Street</td>
+				<td>Purple House</td>
+				<td>$500,000</td>
+			</tr>
+		</table>
 	</body>
 </html>
